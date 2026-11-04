@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 char* int_to_binary(unsigned int n) {
     int total_bits = sizeof(n) * 8;
@@ -118,16 +119,16 @@ void quantum_state_reset(QuantumState* state) {
 }
 
 
-int quantum_state_norm(QuantumState* state) {
-    if (!state) return -1;
+double quantum_state_norm(QuantumState* state) {
+    if (!state) return -1.0;
 
-    int sum = 0;
+    double sum = 0.0;  // FIX: double instead of int
 
-    for (int i = 0; i < state->dim; i++) {
+    for (uint64_t i = 0; i < state->dim; i++) {
         sum += complex_mag_squared(state->state_vector[i]);
     }
 
-    return sum;
+    return sqrt(sum);  // FIX: return sqrt(sum), not just sum
 }
 
 
