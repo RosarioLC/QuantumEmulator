@@ -31,12 +31,12 @@ The project is being developed in several phases:
 
 ### Phase 2 — Gate Application Engine
 
-<sup>🔄 In Progress</sup>
+<sup>✅ Complete</sup>
 
-- [ ] Optimized bitwise gate application (without explicit matrix multiplication).
-- [ ] **Single-qubit gates:** H, X, Y, Z, S, T, Rx, Ry, Rz.
-- [ ] **Two-qubit gates:** CNOT, CZ, SWAP.
-- [ ] **Three-qubit gates:** Toffoli, Fredkin.
+- [x] Optimized bitwise gate application (without explicit matrix multiplication).
+- [x] **Single-qubit gates:** H, X, Y, Z, S, T, Rx, Ry, Rz.
+- [x] **Two-qubit gates:** CNOT, CZ, SWAP.
+- [x] **Three-qubit gates:** Toffoli, Fredkin.
 
 ### Phase 3 — Measurement and Collapse
 
