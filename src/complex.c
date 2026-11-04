@@ -1,4 +1,4 @@
-#include "complex.h"
+#include "../include/complex.h"
 
 Complex complex_add(Complex a, Complex b) {
     return (Complex) {a.real + b.real, a.imaginary + b.imaginary};

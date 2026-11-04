@@ -1,5 +1,4 @@
-#include "quantum_state.h"
-#include "complex.h"
+#include "../include/quantum_state.h"
 
 #include <complex.h>
 #include <math.h>

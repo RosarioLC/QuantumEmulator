@@ -1,4 +1,4 @@
-#include "./include/quantum_state.h"
+#include "../include/quantum_state.h"
 
 
 int main(void) {
